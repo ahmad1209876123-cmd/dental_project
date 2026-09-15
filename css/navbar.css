@@ -1,0 +1,490 @@
+/* =========================================
+   SMILECARE - REUSABLE NAVBAR
+========================================= */
+
+.site-header {
+    width: 100%;
+    background: #ffffff;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    z-index: 9999;
+
+    border-bottom: 1px solid #edf2f4;
+
+    box-shadow:
+        0 4px 20px rgba(18, 59, 74, 0.06);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+
+    min-height: 78px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+    display: inline-block;
+
+    color: #123b4a;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    letter-spacing: -0.5px;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.navbar-logo span {
+    color: #11a8a2;
+}
+
+.navbar-logo:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   DESKTOP MENU
+========================================= */
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   MENU LINKS
+========================================= */
+
+.navbar-menu a {
+    position: relative;
+
+    color: #284b57;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Underline */
+
+.navbar-menu a:not(.navbar-btn)::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: #11a8a2;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* Hover */
+
+.navbar-menu a:not(.navbar-btn):hover {
+    color: #11a8a2;
+}
+
+.navbar-menu a:not(.navbar-btn):hover::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   ACTIVE PAGE
+========================================= */
+
+.navbar-menu a.active {
+    color: #11a8a2;
+}
+
+.navbar-menu a.active::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   APPOINTMENT BUTTON
+========================================= */
+
+.navbar-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    color: #ffffff !important;
+
+    background: #11a8a2;
+
+    border-radius: 7px;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 20px rgba(17, 168, 162, 0.18);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.navbar-btn:hover {
+    color: #ffffff !important;
+
+    background: #0d8f8a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(17, 168, 162, 0.25);
+}
+
+
+/* Remove underline */
+
+.navbar-btn::after {
+    display: none !important;
+}
+
+
+/* =========================================
+   HAMBURGER
+========================================= */
+
+.navbar-toggle {
+    width: 44px;
+    height: 44px;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 0;
+
+    background: #f2fafa;
+
+    border: 1px solid #dceeee;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border 0.3s ease;
+}
+
+.navbar-toggle:hover {
+    background: #e8f7f6;
+}
+
+
+/* Hamburger Lines */
+
+.navbar-toggle span {
+    width: 21px;
+    height: 2px;
+
+    background: #123b4a;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* =========================================
+   HAMBURGER → X
+========================================= */
+
+.navbar-toggle.active span:nth-child(1) {
+    transform:
+        translateY(7px)
+        rotate(45deg);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+    transform:
+        translateY(-7px)
+        rotate(-45deg);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar-menu {
+        gap: 20px;
+    }
+
+    .navbar-menu a {
+        font-size: 13px;
+    }
+
+    .navbar-btn {
+        padding: 11px 14px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar-container {
+        min-height: 70px;
+
+        padding: 0 18px;
+    }
+
+
+    /* Logo */
+
+    .navbar-logo {
+        font-size: 25px;
+    }
+
+
+    /* Show hamburger */
+
+    .navbar-toggle {
+        display: flex;
+
+        position: relative;
+
+        z-index: 10001;
+    }
+
+
+    /* Mobile Menu */
+
+    .navbar-menu {
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px 18px 20px;
+
+        background: #ffffff;
+
+        border-top:
+            1px solid #edf2f4;
+
+        box-shadow:
+            0 15px 30px rgba(18, 59, 74, 0.10);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease,
+            transform 0.3s ease;
+    }
+
+
+    /* Open */
+
+    .navbar-menu.open {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        pointer-events: auto;
+
+        transform:
+            translateY(0);
+    }
+
+
+    /* Mobile Links */
+
+    .navbar-menu a {
+
+        width: 100%;
+
+        padding: 14px 10px;
+
+        font-size: 15px;
+
+        border-bottom:
+            1px solid #edf2f4;
+    }
+
+
+    /* Remove Desktop Underline */
+
+    .navbar-menu a:not(.navbar-btn)::after {
+        display: none;
+    }
+
+
+    /* Hover */
+
+    .navbar-menu a:not(.navbar-btn):hover {
+
+        color: #11a8a2;
+
+        background: #f5fbfb;
+
+        padding-left: 15px;
+    }
+
+
+    /* Active */
+
+    .navbar-menu a.active {
+
+        color: #11a8a2;
+
+        background: #f5fbfb;
+
+        padding-left: 15px;
+    }
+
+
+    /* Appointment */
+
+    .navbar-menu .navbar-btn {
+
+        width: 100%;
+
+        margin-top: 15px;
+
+        padding: 14px;
+
+        justify-content: center;
+
+        border-radius: 7px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .navbar-container {
+
+        min-height: 66px;
+
+        padding: 0 15px;
+    }
+
+
+    .navbar-logo {
+        font-size: 23px;
+    }
+
+
+    .navbar-toggle {
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .navbar-menu {
+
+        top: 66px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .navbar-menu a {
+        font-size: 14px;
+    }
+
+}
