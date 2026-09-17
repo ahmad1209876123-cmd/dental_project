@@ -164,7 +164,7 @@ section {
             rgba(7, 89, 92, 0.90),
             rgba(15, 118, 110, 0.90)
         ),
-        url("../images/dental.jpg") center/cover no-repeat;
+        url("../images/blogs.imgs/dentalcare-helathysmile.blogs-img.jpeg") center/cover no-repeat;
 }
 
 .page-hero::before {
@@ -675,118 +675,6 @@ section {
 
 .cta-btn:hover i {
     transform: translateX(4px);
-}
-
-
-/* =========================
-   10. FOOTER
-========================= */
-
-.footer {
-    background: #0f172a;
-    color: #ffffff;
-    padding: 70px 0 25px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-    gap: 50px;
-    padding-bottom: 45px;
-}
-
-.footer-logo {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 18px;
-}
-
-.footer-logo span {
-    color: #2dd4bf;
-}
-
-.footer-about {
-    max-width: 300px;
-    color: #94a3b8;
-    font-size: 13px;
-}
-
-.footer h4 {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-links a {
-    color: #94a3b8;
-    font-size: 13px;
-    transition: 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #2dd4bf;
-    padding-left: 4px;
-}
-
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-}
-
-.footer-contact p {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    color: #94a3b8;
-    font-size: 13px;
-}
-
-.footer-contact i {
-    color: #2dd4bf;
-    margin-top: 5px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.footer-social a {
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    background: #1e293b;
-    color: #ffffff;
-    transition: 0.3s ease;
-}
-
-.footer-social a:hover {
-    background: #0ea5a8;
-    transform: translateY(-3px);
-}
-
-.footer-bottom {
-    padding-top: 22px;
-    border-top: 1px solid #1e293b;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #64748b;
-    font-size: 12px;
 }
 
 

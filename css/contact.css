@@ -762,110 +762,6 @@ textarea {
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
-
-.footer {
-    background: #102f3b;
-    padding: 70px 0 0;
-    color: #c1d0d4;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
-    gap: 45px;
-    padding-bottom: 50px;
-}
-
-.footer-logo {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.footer-logo span {
-    color: #34c9c3;
-}
-
-.footer-about {
-    color: #aebfc4;
-    font-size: 13px;
-    max-width: 320px;
-    margin-bottom: 20px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 9px;
-}
-
-.footer-social a {
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
-    border-radius: 6px;
-    font-size: 13px;
-    transition: 0.3s ease;
-}
-
-.footer-social a:hover {
-    background: #11a8a2;
-    transform: translateY(-3px);
-}
-
-.footer-column h3 {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 18px;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: #aebfc4;
-    font-size: 13px;
-    transition: 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #34c9c3;
-    padding-left: 4px;
-}
-
-.footer-contact li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 13px;
-    color: #aebfc4;
-    font-size: 13px;
-}
-
-.footer-contact i {
-    color: #34c9c3;
-    margin-top: 4px;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #91a7ad;
-    font-size: 12px;
-}
-
 
 /* =========================================
    TABLET RESPONSIVE
@@ -1017,21 +913,7 @@ textarea {
         font-size: 28px;
     }
 
-    .footer {
-        padding-top: 55px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding-bottom: 40px;
-    }
-
-    .footer-about {
-        max-width: 100%;
-    }
 }
-
 
 /* =========================================
    SMALL MOBILE
@@ -1087,8 +969,5 @@ textarea {
         font-size: 13px;
     }
 
-    .footer-bottom p {
-        font-size: 11px;
-        line-height: 1.7;
-    }
+
 }
