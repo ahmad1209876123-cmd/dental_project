@@ -698,147 +698,6 @@ section {
 
 
 /* =========================
-   12. FOOTER
-========================= */
-
-.footer {
-    background: #123b4a;
-    color: #ffffff;
-    padding-top: 60px;
-    margin-top: 80px;
-}
-
-.footer-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 50px;
-
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 50px;
-}
-
-.footer-column h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 22px;
-    color: #ffffff;
-}
-
-.footer-logo {
-    display: inline-block;
-    font-size: 28px;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 18px;
-}
-
-.footer-logo span {
-    color: #11a8a2;
-}
-
-.footer-about {
-    color: #d6e5e8;
-    font-size: 14px;
-    line-height: 1.8;
-    max-width: 300px;
-    margin-bottom: 22px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 12px;
-}
-
-.footer-social a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #ffffff;
-    color: #123b4a;
-
-    border-radius: 50%;
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-}
-
-.footer-social a:hover {
-    background: #11a8a2;
-    color: #ffffff;
-    transform: translateY(-3px);
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: 12px;
-}
-
-.footer-links a {
-    color: #d6e5e8;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #11a8a2;
-    padding-left: 5px;
-}
-
-.footer-contact {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-contact li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-
-    margin-bottom: 18px;
-
-    color: #d6e5e8;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.footer-contact i {
-    color: #11a8a2;
-    font-size: 16px;
-    margin-top: 3px;
-}
-
-.footer-bottom {
-    background: #102f3b;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.footer-bottom .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 18px 20px;
-}
-
-.footer-bottom p {
-    margin: 0;
-    text-align: center;
-    color: #a9c0c5;
-    font-size: 13px;
-}
-
-
-/* =========================
    FOOTER RESPONSIVE
 ========================= */
 
@@ -851,36 +710,6 @@ section {
 
 }
 
-@media (max-width: 600px) {
-
-    .footer {
-        padding-top: 45px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        padding-bottom: 40px;
-    }
-
-    .footer-logo {
-        font-size: 25px;
-    }
-
-    .footer-about {
-        max-width: 100%;
-    }
-
-    .footer-bottom .container {
-        padding: 16px 15px;
-    }
-
-    .footer-bottom p {
-        font-size: 12px;
-        line-height: 1.6;
-    }
-
-}
 
 /* =========================
    13. TABLET RESPONSIVE
@@ -933,11 +762,6 @@ section {
 
     .values-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
     }
 }
 
@@ -1082,10 +906,7 @@ section {
         font-size: 30px;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 35px;
-    }
+  
 }
 
 
@@ -1199,12 +1020,4 @@ section {
         font-size: 13px;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .footer {
-        padding-top: 55px;
-    }
 }
