@@ -1514,31 +1514,8 @@ img {
 
     /* Footer */
 
-    .footer {
-        padding-top: 55px;
-    }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        text-align: center;
-    }
 
-    .footer-about > p {
-        margin: 0 auto;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .footer-contact {
-        align-items: center;
-    }
-
-    .footer-contact p {
-        justify-content: center;
-    }
 }
 
 
