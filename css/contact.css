@@ -135,7 +135,7 @@ textarea {
    PAGE HERO
 ========================================= */
 
-.page-hero {
+/* .page-hero {
     background: linear-gradient(
         135deg,
         #eafafa 0%,
@@ -146,7 +146,27 @@ textarea {
     text-align: center;
     position: relative;
     overflow: hidden;
+} */
+
+
+.page-hero {
+    background-image:
+        linear-gradient(
+            rgba(13, 47, 59, 0.72),
+            rgba(13, 47, 59, 0.72)
+        ),
+        url("../images/contact.img/dental.cliniccontact\ us-backgoundimg.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 85px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .page-hero::before {
     content: "";
@@ -192,26 +212,32 @@ textarea {
 .page-hero h1 {
     font-size: 48px;
     line-height: 1.2;
-    color: #123b4a;
+    color: #ffffff;
     margin-bottom: 15px;
     font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .page-hero p {
     max-width: 650px;
     margin: 0 auto 18px;
-    color: #687b82;
+    color: #f1f7f8;
     font-size: 16px;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumb {
-    color: #71848a;
+    color: #e6f1f2;
     font-size: 13px;
 }
 
 .breadcrumb a {
-    color: #11a8a2;
-    font-weight: 500;
+    color: #63ddd8;
+    font-weight: 600;
+}
+
+.breadcrumb i {
+    color: #dcebed;
 }
 
 
@@ -491,6 +517,64 @@ textarea {
     position: relative;
 }
 
+
+.map-box {
+    width: 100%;
+    height: 290px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-box > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.map-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 25px;
+
+    background: rgba(13, 47, 59, 0.62);
+}
+
+.map-overlay span {
+    display: inline-block;
+    color: #53d6d0;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.map-overlay h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.map-overlay p {
+    color: #e0eeee;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.map-overlay .map-btn {
+    background: #ffffff;
+    color: #11a8a2;
+}
+
 .map-placeholder {
     height: 100%;
     display: flex;
@@ -684,9 +768,29 @@ textarea {
    CONTACT CTA
 ========================================= */
 
-.contact-cta {
+/* .contact-cta {
     padding: 85px 0;
     background: linear-gradient(135deg, #11a8a2, #087e7a);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+} */
+
+
+.contact-cta {
+    padding: 85px 0;
+
+    background-image:
+        linear-gradient(
+            rgba(13, 47, 59, 0.78),
+            rgba(13, 47, 59, 0.78)
+        ),
+        url("../images/contact.img/contact.cta.background.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -795,10 +899,7 @@ textarea {
         grid-column: span 2;
     }
 
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-    }
+
 }
 
 
